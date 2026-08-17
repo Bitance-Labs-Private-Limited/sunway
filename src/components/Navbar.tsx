@@ -48,9 +48,13 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <Lotus className="h-8 w-8 text-gold transition-transform group-hover:scale-110" />
-            <span className="text-xl font-serif text-gold group-hover:text-gold-light transition-colors">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0">
+            <img
+              src="/images/logo.png"
+              alt="Sunway Wellness logo"
+              className="h-9 w-9 sm:h-10 sm:w-10 md:h-12 md:w-12 object-contain shrink-0"
+            />
+            <span className="text-base sm:text-lg md:text-xl font-serif text-gold group-hover:text-gold-light transition-colors whitespace-nowrap">
               Sunway Wellness
             </span>
           </Link>

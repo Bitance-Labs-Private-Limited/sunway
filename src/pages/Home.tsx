@@ -19,14 +19,30 @@ const Home = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform flex items-center justify-center"
-          title="WhatsApp Us"
+          title="WhatsApp Laxmi Nagar Branch"
         >
           <MessageCircle className="h-6 w-6" />
         </a>
         <a 
           href="tel:9370253809" 
           className="bg-[#853A2B] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform flex items-center justify-center"
-          title="Call Us"
+          title="Call Laxmi Nagar Branch"
+        >
+          <Phone className="h-6 w-6" />
+        </a>
+        <a 
+          href="https://wa.me/9623099723" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform flex items-center justify-center"
+          title="WhatsApp Dhantoli Branch"
+        >
+          <MessageCircle className="h-6 w-6" />
+        </a>
+        <a 
+          href="tel:9623099723" 
+          className="bg-[#853A2B] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform flex items-center justify-center"
+          title="Call Dhantoli Branch"
         >
           <Phone className="h-6 w-6" />
         </a>

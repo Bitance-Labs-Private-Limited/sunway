@@ -17,20 +17,44 @@ const Footer = () => {
           {/* Contact Information */}
           <div>
             <h3 className="font-serif text-xl mb-4 text-gold">Contact Us</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-gold" />
-                <p>
-                  Sunway Wellness studio
-                  169, RPTS Road beside Bank of India ATM near Mate Square, 
-                  Laxmi Nagar Nagpur- Maharashtra 440022
-                </p>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-gold mt-1" />
+                  <div>
+                    <p className="font-medium text-gold">Laxmi Nagar</p>
+                    <p>
+                      Sunway Wellness studio<br />
+                      169, RPTS Road beside Bank of India ATM near Mate Square,<br />
+                      Laxmi Nagar, Nagpur - Maharashtra 440022
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 pl-8">
+                  <Phone className="h-4 w-4 text-gold" />
+                  <p>+91 9370253809</p>
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-gold" />
-                <p>+91 9370253809</p>
+
+              <div className="space-y-2 border-t border-gold/10 pt-3">
+                <div className="flex items-start space-x-3">
+                  <MapPin className="h-5 w-5 text-gold mt-1" />
+                  <div>
+                    <p className="font-medium text-gold">Dhantoli</p>
+                    <p>
+                      Sunway Wellness studio<br />
+                      Ground floor, Arjun Palace, Beside Hotel North View,<br />
+                      Opposite Yashwant Stadium, Dhantoli, Nagpur - Maharashtra
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3 pl-8">
+                  <Phone className="h-4 w-4 text-gold" />
+                  <p>+91 9623099723</p>
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
+
+              <div className="flex items-center space-x-3 border-t border-gold/10 pt-3">
                 <Mail className="h-5 w-5 text-gold" />
                 <p>sunwaywellness@gmail.com</p>
               </div>

@@ -12,14 +12,19 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="h-6 w-6" />,
-      title: "Location",
-      content:
-        "Plot Number 169, Opp Police Training School, RPTS Rd, Laxminagar, Malhotras, Maharashtra 440022",
+      title: "Laxmi Nagar Branch",
+      content: [
+        "Sunway Wellness studio, 169, RPTS Road beside Bank of India ATM near Mate Square, Laxmi Nagar, Nagpur - Maharashtra 440022",
+        "+91 9370253809",
+      ],
     },
     {
-      icon: <Phone className="h-6 w-6" />,
-      title: "Phone",
-      content: "+91 9370253809",
+      icon: <MapPin className="h-6 w-6" />,
+      title: "Dhantoli Branch",
+      content: [
+        "Sunway Wellness studio, Ground floor, Arjun Palace, Beside Hotel North View, Opposite Yashwant Stadium, Dhantoli, Nagpur - Maharashtra",
+        "+91 9623099723",
+      ],
     },
     {
       icon: <Mail className="h-6 w-6" />,
@@ -148,9 +153,17 @@ const Contact = () => {
                   >
                     <div className="text-emerald-600 mb-3">{info.icon}</div>
                     <h3 className="font-serif text-lg mb-2">{info.title}</h3>
-                    <p className="text-neutral-600 dark:text-neutral-400">
-                      {info.content}
-                    </p>
+                    {Array.isArray(info.content) ? (
+                      <div className="space-y-2 text-neutral-600 dark:text-neutral-400">
+                        {info.content.map((line, lineIndex) => (
+                          <p key={lineIndex}>{line}</p>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="text-neutral-600 dark:text-neutral-400">
+                        {info.content}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
