@@ -123,7 +123,7 @@ const Home = () => {
             >
               <div className="overflow-hidden bg-[#FAF6F0] p-3 shadow-sm border border-[#EAE3D8]">
                 <img
-                  src="/images/IMG_7262.JPG.jpeg"
+                  src="/images/img_7262.jpeg"
                   alt="Luxury holistic spa treatment"
                   className="w-full h-[500px] object-cover grayscale-[15%] hover:scale-105 transition-transform duration-700"
                 />
@@ -152,16 +152,19 @@ const Home = () => {
             {[
               {
                 title: "Holistic Body Therapies",
+                alt: "Luxury holistic spa treatment",
                 desc: "Deeply restorative full-body massages incorporating rhythmic touch, targeted trigger release, and specialized essential botanical oils.",
                 img: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               },
               {
                 title: "Deep Tissue & Recovery",
+                alt: "Deep tissue and recovery",
                 desc: "An intense manipulation framework built to untangle severe muscular tension, decrease standard inflammation, and boost localized performance.",
-                img: "/images/IMG_9534.JPG.jpeg"
+                img: "/images/img_9534.jpeg"
               },
               {
                 title: "Ayurvedic Hot Stone",
+                alt: "Luxury hot stone therapy",
                 desc: "Smooth, basalt stones heated explicitly to balance internal energy flows, detoxify structural systems, and induce severe physical calm.",
                 img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
               }
@@ -177,7 +180,7 @@ const Home = () => {
                   <div className="overflow-hidden mb-6 relative">
                     <img 
                       src={service.img} 
-                      alt={service.title} 
+                      alt={service.alt || service.title} 
                       className="w-full h-64 object-cover filter grayscale-[20%] group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
@@ -280,8 +283,8 @@ const Home = () => {
             <div className="w-full md:w-auto flex-shrink-0">
               <div className="bg-[#FAF6F0] p-2 max-w-[280px] mx-auto shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
                 <img 
-                  src="/images/IMG_7741.PNG" 
-                  alt="Official Excellence Award Document Framed" 
+                  src="/images/award.png" 
+                  alt="Best wellness studio"
                   className="w-full h-60 object-cover filter contrast-[1.05]"
                 />
                 <div className="pt-2 pb-1 text-center text-[#232323]">
